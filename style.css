@@ -1,0 +1,168 @@
+body {
+    background: darkgrey;
+}
+
+#main {
+    margin: 10px auto;
+    padding: 40px;
+    border-radius: 10px;
+    background: rgb(240, 240, 240);
+    align-content: center;
+    max-width: 1200px;
+    font-family: "Rokkitt";
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+#title {
+    font-family: "Bebas Neue";
+    color: #292929;
+    text-align: center;
+    font-size: 3.7rem;
+    margin-top: 25px;
+    margin-block-end: 0em;
+}
+
+#sub-title {
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: -15px;
+    color: #820000;
+}
+
+a {
+    color: #820000;
+}
+
+a:visited {
+    color: #656565;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: #292929;
+}
+
+#image {
+    height: auto;
+    max-width: 70%;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+#img-caption {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #656565;
+}
+
+hr {
+    width: 65%;
+    border-color: #a03737;
+}
+
+#tribute-info {
+    margin: 50px auto;
+    text-align: justify;
+    font-size: 1.5rem;
+    width: 60%;
+    color: #292929;
+    display: block;
+}
+
+ul {
+    padding-right: 25px;
+}
+
+li {
+    margin: 16px 0px;
+}
+
+::marker {
+    color: #820000;
+}
+
+#video-div {
+    margin: auto;
+    width: 60%;
+}
+
+#vimeo {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+#vimeo iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#vid-caption {
+    margin-top: 10px;
+    display: block;
+    text-align: justify;
+    font-size: 1.2rem;
+    color: #656565;
+}
+
+#quote {
+    display: grid;
+    width: 65%;
+    margin: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 5px 30px;
+    grid-template-areas: "o-photo" "o-quote" "o-sign";
+}
+
+@media (min-width: 780px) {
+    #quote {
+        grid-template-columns: 30% auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "o-photo o-quote" "o-photo o-sign";
+    }
+}
+
+#olzhas-pic {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    align-self: center;
+    grid-area: o-photo;
+}
+
+#quote-text {
+    font-family: "Syne Mono";
+    font-size: 1.3rem;
+    grid-area: o-quote;
+    align-self: end;
+    margin: 0px;
+}
+
+#quote-cite {
+    font-family: "Syne Mono";
+    grid-area: o-sign;
+    font-size: 1rem;
+    margin: 0px 0px 0px 10%;
+    align-self: start;
+    text-align: right;
+}
+
+#hr-bottom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#links {
+    font-size: 1.4rem;
+    text-align: center;
+}
